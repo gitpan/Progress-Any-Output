@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 require Progress::Any;
 
@@ -23,10 +23,6 @@ sub _set_or_add {
     $output =~ /\A\w+(::\w+)*\z/ or die "Invalid output syntax '$output'";
 
     my $task = $opts->{task} // "main";
-
-    # just so that the indicator gets created, if not yet. also, so that task
-    # syntax is checked.
-    Progress::Any->get_indicator(task => $task);
 
     my $outputo;
     {
@@ -68,7 +64,7 @@ Progress::Any::Output - Assign output to progress indicators
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
