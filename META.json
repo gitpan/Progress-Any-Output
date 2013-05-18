@@ -34,7 +34,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Progress::Any" : "0.05",
+            "Progress::Any" : "0.08",
             "perl" : "5.010001"
          }
       }
@@ -46,6 +46,6 @@
          "url" : "http://github.com/sharyanto/perl-Progress-Any-Output"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

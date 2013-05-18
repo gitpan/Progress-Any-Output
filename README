@@ -2,7 +2,7 @@ NAME
     Progress::Any::Output - Assign output to progress indicators
 
 VERSION
-    version 0.02
+    version 0.03
 
 SYNOPSIS
     In your application:

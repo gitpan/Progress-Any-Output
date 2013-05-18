@@ -17,13 +17,13 @@ my %module_build_args = (
     "Steven Haryanto <stevenharyanto\@gmail.com>"
   ],
   "dist_name" => "Progress-Any-Output",
-  "dist_version" => "0.02",
+  "dist_version" => "0.03",
   "license" => "perl",
   "module_name" => "Progress::Any::Output",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
-    "Progress::Any" => "0.05",
+    "Progress::Any" => "0.08",
     "perl" => "5.010001"
   },
   "script_files" => []

@@ -14,9 +14,9 @@ meta-spec:
   version: 1.4
 name: Progress-Any-Output
 requires:
-  Progress::Any: 0.05
+  Progress::Any: 0.08
   perl: 5.010001
 resources:
   homepage: http://metacpan.org/release/Progress-Any-Output
   repository: http://github.com/sharyanto/perl-Progress-Any-Output
-version: 0.02
+version: 0.03

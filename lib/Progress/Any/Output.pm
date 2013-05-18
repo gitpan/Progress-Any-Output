@@ -4,7 +4,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 require Progress::Any;
 
@@ -20,9 +20,9 @@ sub _set_or_add {
     }
 
     my $output = shift or die "Please specify output name";
-    $output =~ /\A\w+(::\w+)*\z/ or die "Invalid output syntax '$output'";
+    $output =~ /\A(?:\w+(::\w+)*)?\z/ or die "Invalid output syntax '$output'";
 
-    my $task = $opts->{task} // "main";
+    my $task = $opts->{task} // "";
 
     my $outputo;
     {
@@ -64,7 +64,7 @@ Progress::Any::Output - Assign output to progress indicators
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
